@@ -76,7 +76,18 @@ export default function PostCard({
       >
         {post.body}
       </p>
-
+      <div
+        style={{
+          display: "flex",
+          gap: "1rem",
+          marginBottom: "1rem",
+          color: "var(--foreground)",
+          opacity: 0.8,
+        }}
+      >
+        <span>Likes: {post.reactions.likes}</span>
+        <span>Dislikes: {post.reactions.dislikes}</span>
+      </div>
       <div
         style={{
           display: "flex",
